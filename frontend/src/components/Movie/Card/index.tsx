@@ -10,6 +10,7 @@ import {
 } from '..'
 
 import { Container } from './style'
+import { Link } from 'react-router-dom'
 
 const Card:React.FC = () => {
   return (
@@ -18,7 +19,9 @@ const Card:React.FC = () => {
          <BottomCard>
             <Title text={movies.title}/>
             <Score />
-            <Button className='btn btn-primary' text='Avaliar'/>
+            <Link to={`/form/${movies.id}`}>
+               <Button className='btn btn-primary' text='Avaliar'/>
+            </Link>
          </BottomCard>
       </>
   )

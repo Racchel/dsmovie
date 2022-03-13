@@ -10,6 +10,7 @@ import {
   Label,
   ButtonContainer
 } from './style'
+import { Link } from 'react-router-dom'
 
 
 const Form:React.FC = () => {
@@ -37,7 +38,9 @@ const Form:React.FC = () => {
             <Button type='submit' className='btn btn-primary' text='Salvar'/>
           </ButtonContainer>
         </FormContent>
-        <Button className='btn btn-primary mt-3' text='Cancelar'/>
+        <Link to='/'>
+          <Button className='btn btn-primary mt-3' text='Cancelar'/>
+        </Link>
       </BottomCard>
     </Container>
   )
