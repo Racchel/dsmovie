@@ -1,6 +1,7 @@
 const sizes = {
   header_Height: '60px',
   paragraph_Size: '12px',
+  paragraph_Weight: '700',
   mainTitle_Size: '24px',
   mainTitle_Weight: '700',
   tertiaryTitle_Size: '14px',

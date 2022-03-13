@@ -9,11 +9,11 @@ export const Container = styled.div`
 export const ScoreValue = styled.p`
    margin: 0;
    color:${palleteColor.orange};
-   font-size: 16px;
-   font-weight: 700;
+   font-size: ${sizes.paragraph_Size};
+   font-weight: ${sizes.paragraph_Weight};
 `
 export const ScoreCount = styled.p`
-   font-size: 12px;
+   font-size: ${sizes.paragraph_Size};
    color: ${palleteColor.gray};
    margin: 4px 0 10px 0;
 `
