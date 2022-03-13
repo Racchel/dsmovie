@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { palleteColor, sizes } from 'assets/globalStyles';
+import styled from 'styled-components'
+import { palleteColor, sizes } from 'assets/globalStyles'
 
 export const Header = styled.header`
    height: ${sizes.header_Height};
@@ -11,7 +11,7 @@ export const Header = styled.header`
 export const Nav = styled.nav`
 `
 
-export const NavContent = styled.div`
+export const NavFormContent = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-between;
