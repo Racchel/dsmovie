@@ -1,0 +1,5 @@
+/* ver depois como usar props */
+
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
+}

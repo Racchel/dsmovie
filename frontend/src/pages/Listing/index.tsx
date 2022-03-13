@@ -1,7 +1,8 @@
 import React from 'react'
+import { Pagination } from 'components'
 
-export default function Listing() {
+export default function Listing () {
   return (
-    <div>Página de Listagem</div>
+    <Pagination />
   )
 }
