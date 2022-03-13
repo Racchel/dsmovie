@@ -9,7 +9,7 @@ import {
   ContactLink
 } from './style'
 
-export default function Navbar () {
+const Navbar:React.FC = () => {
   return (
     <Header>
       <Nav className='container'>
@@ -26,3 +26,5 @@ export default function Navbar () {
     </Header>
   )
 }
+
+export default Navbar

@@ -1,23 +1,23 @@
 import React from 'react'
 import movies from '../../mocks'
+
+import { ImageCard, BottomCard, Button, Title } from 'components/Movie'
+
 import {
   Container,
-  MovieCardImage,
-  CardContainer,
-  H3,
   FormContent,
   FormGroup,
   Label,
-  ButtonContainer,
-  Button
+  ButtonContainer
 } from './style'
 
-export default function Form () {
+
+const Form:React.FC = () => {
   return (
     <Container>
-      <MovieCardImage src={movies.image} alt={movies.title} />
-      <CardContainer>
-        <H3>{movies.title}</H3>
+      <ImageCard src={movies.image} alt={movies.title} />
+      <BottomCard>
+        <Title text={movies.title}/>
         <FormContent>
           <FormGroup className='form-group'>
             <Label htmlFor='email'>Informe seu email</Label>
@@ -34,11 +34,13 @@ export default function Form () {
             </select>
           </FormGroup>
           <ButtonContainer>
-            <Button type='submit' className='btn btn-primary dsmovie-btn'>Salvar</Button>
+            <Button type='submit' className='btn btn-primary' text='Salvar'/>
           </ButtonContainer>
         </FormContent>
-        <Button className='btn btn-primary mt-3'>Cancelar</Button>
-      </CardContainer>
+        <Button className='btn btn-primary mt-3' text='Cancelar'/>
+      </BottomCard>
     </Container>
   )
 }
+
+export default Form

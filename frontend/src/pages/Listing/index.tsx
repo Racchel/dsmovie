@@ -1,8 +1,15 @@
 import React from 'react'
 import { Pagination } from 'components'
+import { Card as MovieCard } from 'components/Movie'
 
-export default function Listing () {
+const Listing:React.FC = () => {
+
   return (
-    <Pagination />
+    <>
+      <Pagination />
+      <MovieCard />
+    </>
   )
 }
+
+export default Listing

@@ -9,7 +9,8 @@ const sizes = {
   button_Height: '40px',
   button_Size: '14px',
   button_Weight: '700',
-  label_Size: '12px'
+  label_Size: '12px',
+  star_Size: '22px'
 }
 
 export default sizes

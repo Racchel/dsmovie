@@ -1,25 +1,23 @@
 import React from 'react'
-import { ReactComponent as Arrow } from 'assets/img/arrow.svg'
-import './style.css'
+
+import ArrowButton from './Button'
+
 import {
   Container,
   PaginationBox,
-  Button,
   Paragraph
 } from './style'
 
-export default function index () {
+const Pagination:React.FC = () => {
   return (
     <Container>
       <PaginationBox>
-        <Button disabled className='dsmovie-flip-horizontal'>
-          <Arrow />
-        </Button>
+        <ArrowButton disabled={true} />
         <Paragraph>{`${1} de ${3}`}</Paragraph>
-        <Button disabled={false} >
-          <Arrow />
-        </Button>
+        <ArrowButton disabled={false} rotate={true}/>
       </PaginationBox>
     </Container>
   )
 }
+
+export default Pagination

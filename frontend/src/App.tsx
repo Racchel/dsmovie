@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   BrowserRouter,
   Routes,
@@ -7,7 +8,7 @@ import {
 import { Listing, Form } from 'pages'
 import { Navbar } from 'components'
 
-function App () {
+const App:React.FC = () => {
   return (
     <BrowserRouter>
       <Navbar />
