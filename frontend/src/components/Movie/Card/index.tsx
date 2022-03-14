@@ -1,5 +1,4 @@
 import React from 'react'
-import movies from 'mocks'
 
 import { 
    Score, 
@@ -10,15 +9,20 @@ import {
 } from '..'
 
 import { Link } from 'react-router-dom'
+import { Movie } from 'types/movie'
 
-const Card:React.FC = () => {
+type Props = {
+   movie: Movie
+}
+
+function Card ({ movie } : Props )  {
   return (
       <>
-         <ImageCard src={movies.image} alt={movies.title} />
+         <ImageCard src={movie.image} alt={movie.title} />
          <BottomCard>
-            <Title text={movies.title}/>
+            <Title text={movie.title}/>
             <Score />
-            <Link to={`/form/${movies.id}`}>
+            <Link to={`/form/${movie.id}`}>
                <Button className='btn btn-primary' text='Avaliar'/>
             </Link>
          </BottomCard>
