@@ -9,7 +9,6 @@ import {
    Button
 } from '..'
 
-import { Container } from './style'
 import { Link } from 'react-router-dom'
 
 const Card:React.FC = () => {

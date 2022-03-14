@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { palleteColor, sizes } from 'assets/globalStyles'
+import { palleteColor } from 'assets/globalStyles'
 
 export const Container = styled.div`
    padding: 15px 0;

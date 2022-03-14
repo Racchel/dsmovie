@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { palleteColor, sizes } from 'assets/globalStyles'
+import { palleteColor } from 'assets/globalStyles'
 import IArrowButtonProps from './IArrowButtonProps'
 
 export const Container = styled.button<IArrowButtonProps>`
