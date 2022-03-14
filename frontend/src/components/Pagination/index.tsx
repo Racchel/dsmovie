@@ -14,7 +14,7 @@ const Pagination:React.FC = () => {
       <PaginationBox>
         <ArrowButton disabled={true} />
         <Paragraph>{`${1} de ${3}`}</Paragraph>
-        <ArrowButton disabled={false} rotate={true}/>
+        <ArrowButton disabled={false} rotate='rotate(180deg);'/>
       </PaginationBox>
     </Container>
   )

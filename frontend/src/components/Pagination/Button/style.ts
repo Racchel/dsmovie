@@ -24,6 +24,6 @@ export const Container = styled.button<IArrowButtonProps>`
 
    svg {
       filter: brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(7395%) hue-rotate(234deg) brightness(89%) contrast(92%);
-      transform: ${props => props.rotate ? 'rotate(180deg);' : ''}
+      transform: ${props => props.rotate }
    }
 `
