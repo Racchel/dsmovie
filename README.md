@@ -45,7 +45,7 @@
 <footer>
 
    _Não deixe de entrar no site e avaliar seu filme preferido!_
-   </br>
 
-   **By Racchel Velasco - março de 2022**
+
+   <p>By Racchel Velasco - março de 2022</p>
 </footer>
