@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 const Form:React.FC = () => {
   const params = useParams()
 
-  return (
+  return ( 
     <FormCard movieId={`${params.movieId}`}/>
   )
 }

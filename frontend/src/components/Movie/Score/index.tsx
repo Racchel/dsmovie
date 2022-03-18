@@ -7,14 +7,17 @@ import {
    ScoreCount
 } from './style'
 
-const Score:React.FC = () => {
-   const score = 3.5
-   const count = 13
+interface IScoreProps {
+   score: number
+   count: number
+}
+
+const Score:React.FC<IScoreProps> = ({ score, count }) => {
 
    return (
       <Container>
          <ScoreValue>{score > 0 ? score.toFixed(1) : '-'}</ScoreValue>
-         <Stars />
+         <Stars score={score} />
          <ScoreCount>{count} avaliações</ScoreCount>
       </Container>
    )

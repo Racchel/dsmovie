@@ -21,7 +21,7 @@ function Card ({ movie } : Props )  {
          <ImageCard src={movie.image} alt={movie.title} />
          <BottomCard>
             <Title text={movie.title}/>
-            <Score />
+            <Score score={ movie.score } count={movie.count} />
             <Link to={`/form/${movie.id}`}>
                <Button className='btn btn-primary' text='Avaliar'/>
             </Link>
