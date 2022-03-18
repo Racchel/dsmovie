@@ -4,8 +4,8 @@ import {
 } from './style'
 
 interface IImageProps extends InputHTMLAttributes<HTMLInputElement> {
-  src: string
-  alt: string
+  src?: string
+  alt?: string
 }
 
 const ImageCard:React.FC<IImageProps> = (props) => {

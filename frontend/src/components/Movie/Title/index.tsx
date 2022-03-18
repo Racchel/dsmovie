@@ -3,7 +3,7 @@ import React from 'react'
 import { Container } from './style'
 
 interface ITitleProps{
-  text: string
+  text?: string
 }
 
 const Title:React.FC<ITitleProps> = (props) => {

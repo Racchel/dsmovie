@@ -30,6 +30,15 @@ const Listing:React.FC = () => {
       })
   }, [pageNumber])
 
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=title`)
+  //     const data = response.data as MoviePage
+  //     setPage(data)
+  //   }
+  //   fetchData()
+  // }, [pageNumber])
+
   return (
     <>
       <Pagination />
