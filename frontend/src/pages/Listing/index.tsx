@@ -4,7 +4,6 @@ import { Pagination } from 'components'
 import { Card as MovieCard } from 'components/Movie'
 import { BASE_URL } from 'utils/requests'
 import { MoviePage } from 'types/movie'
-import movies from 'mocks'
 
 const Listing:React.FC = () => {
 
@@ -30,18 +29,13 @@ const Listing:React.FC = () => {
       })
   }, [pageNumber])
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const response = await axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=title`)
-  //     const data = response.data as MoviePage
-  //     setPage(data)
-  //   }
-  //   fetchData()
-  // }, [pageNumber])
+  const handlePageChange = (newPageNumber : number) => {
+    setPageNumber(newPageNumber)
+  }
 
   return (
     <>
-      <Pagination />
+      <Pagination page={page} onChange={handlePageChange}/>
       <div className='container'>
         <div className='row'>
 

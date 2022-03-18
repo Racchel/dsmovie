@@ -1,4 +1,5 @@
 import React from 'react'
+import { MoviePage } from 'types/movie'
 
 import ArrowButton from './Button'
 
@@ -8,13 +9,19 @@ import {
   Paragraph
 } from './style'
 
-const Pagination:React.FC = () => {
+interface IPaginationProps {
+  page: MoviePage
+  onChange: Function
+}
+
+const Pagination:React.FC<IPaginationProps> = ({ page, onChange }) => {
+
   return (
     <Container>
       <PaginationBox>
-        <ArrowButton disabled={true} />
-        <Paragraph>{`${1} de ${3}`}</Paragraph>
-        <ArrowButton disabled={false} rotate='rotate(180deg);'/>
+        <ArrowButton disabled={page.first} onClick={() => onChange(page.number - 1) } />
+        <Paragraph>{`${page.number + 1} de ${page.totalPages}`}</Paragraph>
+        <ArrowButton disabled={page.last} onClick={() => onChange(page.number + 1)} rotate='rotate(180deg);'/>
       </PaginationBox>
     </Container>
   )
